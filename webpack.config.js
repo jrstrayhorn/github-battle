@@ -5,7 +5,7 @@ var webpack = require('webpack');
 // NODE_ENV to production
 // uglify
 var config = {
-  entry: ['babel-polyfill', './app/index.js'],
+  entry: ['babel-polyfill', 'whatwg-fetch', './app/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
