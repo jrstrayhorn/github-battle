@@ -1,6 +1,6 @@
 import React from 'react';
 import Popular from './Popular';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
 import Battle from './Battle';
@@ -9,7 +9,7 @@ import Results from './Results';
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <div className="container">
           <Nav />
           <Switch>
@@ -20,7 +20,7 @@ class App extends React.Component {
             <Route render={() => <p>Not Found</p>} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
